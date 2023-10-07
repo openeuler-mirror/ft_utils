@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 Huawei Technologies Co., Ltd.
+ * Copyright (c) 2023 Huawei Technologies Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -21,7 +21,7 @@
 
 using namespace OHOS::HiviewDFX;
 
-constexpr HiLogLabel LABEL = { LOG_CORE, 0xD001400, "DrmBackend" };
+constexpr HiLogLabel LABEL = { LOG_CORE, 0xD001400, "EventLoop" };
 
 #define LOG_FATAL(format, ...) HiLog::Fatal(LABEL, format, ##__VA_ARGS__)
 #define LOG_ERROR(format, ...) HiLog::Error(LABEL, format, ##__VA_ARGS__)
