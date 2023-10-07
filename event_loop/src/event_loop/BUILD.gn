@@ -1,3 +1,4 @@
+#
 # Copyright (c) 2023 Huawei Technologies Co., Ltd.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,6 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-group("ft_utils") {
-  deps = [ "//event_loop:ft_event_loop" ]
+import("//build/gn/fangtian.gni")
+
+ft_shared_library("hal_event_loop") {
+  sources = [
+    "event_channel.cpp",
+    "event_loop.cpp",
+    "event_loop_thread.cpp",
+    "event_poller.cpp",
+    "timer.cpp",
+    "timer_queue.cpp",
+  ]
+  configs = [ "//display_server/drivers/hal:hal_public_config" ]
+  public_deps = [ "//display_server/drivers/hal/base:ft_event_loop" ]
 }
