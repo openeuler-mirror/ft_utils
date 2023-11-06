@@ -27,4 +27,6 @@ package_deps = [
     "python3",
     "tar",
     "cmake",
+    "distributed-utils",
+    "distributed-build",
 ]
